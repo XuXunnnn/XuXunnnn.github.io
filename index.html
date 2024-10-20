@@ -49,53 +49,45 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-    <tr onmouseout="gsevt_stop()" onmouseover="gsevt_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='gsvet_image'><video  width=100% muted autoplay loop>
-          <source src="images/gsevt.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/gsvet.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function gsvet_start() {
-            document.getElementById('gsevt_image').style.opacity = "1";
-          }
+<tr onmouseout="gsevt_stop()" onmouseover="gsevt_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='gsevt_video'><video width=100% muted autoplay loop>
+        <source src="images/gsevt.jpg" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></div>
+      <img src='images/gsevt.jpg' id='gsevt_image' width=100%>
+    </div>
+    <script type="text/javascript">
+      function gsevt_start() {
+        document.getElementById('gsevt_image').style.opacity = "1";
+      }
 
-          function gsvet_stop() {
-            document.getElementById('gsevt_image').style.opacity = "0";
-          }
-          gsevt_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-          <span class="papertitle">GS-EVT: Cross-Modal Event Camera Tracking based on Gaussian Splatting
-</span>
-        </a>
-        <br>
-				<a href="https://github.com/ChillTerry">Tao Liu</a>,
-				<a href="https://github.com/peteryuan123">Runze Yuan</a>,
-				<a href="https://github.com/LEON-JU">Yi'ang Ju</a>,
-				<strong>Xun Xu</strong>,
-				<a href="https://github.com/greatoyster"> Jiaqi Yang</a>,
-				<a href="https://github.com/Launch-on-Titania">Xiangting Meng</a>,
-		                <a href="https://sist.shanghaitech.edu.cn/Xavier%20Pierre%20Lagorce/main.psp">Xavier Lagorce</a>,
-		                <a href="https://mpl.sist.shanghaitech.edu.cn/Director.html">Laurent Kneip</a>
-        <br>
-        <em>under review</em>
-        <br>
-<!--         <a href="https://creiser.github.io/binary_opacity_grid/">project page</a> -->
-<!--         / -->
-<!--         <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a> -->
-<!--         / -->
-        <a href="https://arxiv.org/abs/2409.19228">arXiv</a>
-        <p></p>
-        <p>
-		This paper introduces a robust event camera-based motion tracking method using gaussian splatting and novel pose parametrization for accurate tracking.
-        </p>
-      </td>
-    </tr>
+      function gsevt_stop() {
+        document.getElementById('gsevt_image').style.opacity = "1"; // 改为1，确保可见
+      }
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <span class="papertitle">GS-EVT: Cross-Modal Event Camera Tracking based on Gaussian Splatting</span>
+    <br>
+    <a href="https://github.com/ChillTerry">Tao Liu</a>,
+    <a href="https://github.com/peteryuan123">Runze Yuan</a>,
+    <a href="https://github.com/LEON-JU">Yi'ang Ju</a>,
+    <strong>Xun Xu</strong>,
+    <a href="https://github.com/greatoyster">Jiaqi Yang</a>,
+    <a href="https://github.com/Launch-on-Titania">Xiangting Meng</a>,
+    <a href="https://sist.shanghaitech.edu.cn/Xavier%20Pierre%20Lagorce/main.psp">Xavier Lagorce</a>,
+    <a href="https://mpl.sist.shanghaitech.edu.cn/Director.html">Laurent Kneip</a>
+    <br>
+    <em>under review</em>
+    <br>
+    <a href="https://arxiv.org/abs/2409.19228">arXiv</a>
+    <p></p>
+    <p>This paper introduces a robust event camera-based motion tracking method using gaussian splatting and novel pose parametrization for accurate tracking.</p>
+  </td>
+</tr>
+
 
             
  </tbody></table>
